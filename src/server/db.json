@@ -1,0 +1,98 @@
+{
+    "habitEntries": [
+        {
+            "userId": 1,
+            "date": "23072017",
+            "habits": [
+                1,
+                3
+            ]
+        },
+        {
+            "userId": 1,
+            "date": "22072017",
+            "habits": [
+                1,
+                3
+            ]
+        },
+        {
+            "userId": 1,
+            "date": "21072017",
+            "habits": [
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "calorieEntries": [
+        {
+            "userId": 1,
+            "date": "23072017",
+            "weight": 1756
+        },
+        {
+            "userId": 1,
+            "date": "22072017",
+            "weight": 2389
+        },
+        {
+            "userId": 1,
+            "date": "21072017",
+            "weight": 1234
+        },
+        {
+            "userId": 1,
+            "date": "20072017",
+            "weight": 1500
+        }
+    ],
+    "weightEntries": [
+        {
+            "userId": 1,
+            "date": "23072017",
+            "weight": 76
+        },
+        {
+            "userId": 1,
+            "date": "22072017",
+            "weight": 76
+        },
+        {
+            "userId": 1,
+            "date": "21072017",
+            "weight": 76
+        },
+        {
+            "userId": 1,
+            "date": "20072017",
+            "weight": 76
+        }
+    ],
+    "habits": [
+        {
+            "id": "1",
+            "userId": "1",
+            "description": "Drink at least one liter of water"
+        },
+        {
+            "id": "2",
+            "userId": "1",
+            "description": "Eat two pieces of fruit"
+        },
+        {
+            "id": "3",
+            "userId": "1",
+            "description": "Don't drink any kind of soda"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "user1",
+            "weightGoal": 57,
+            "calorieGoal": 1750
+        }
+    ]
+}
