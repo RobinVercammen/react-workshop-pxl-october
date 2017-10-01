@@ -12,11 +12,13 @@ import Dashboard from './dashboard/dashboard.page';
 import Habits from './habits/habits.page';
 import Settings from './settings/settings.page';
 import Weight from './weight/weight.page';
+import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
 
-export default class Layout extends Component {
+class Layout extends Component {
     constructor() {
         super();
-        this.state = { open: false }
+        this.state = { open: false };
     }
     toggleDrawer = () => {
         this.setState({ open: !this.state.open });
@@ -29,7 +31,7 @@ export default class Layout extends Component {
             <Router>
                 <div>
                     <AppBar
-                        title="Dashboard"
+                        title={this.props.title}
                         onLeftIconButtonTouchTap={this.toggleDrawer}
                         iconClassNameRight="muidocs-icon-navigation-expand-more"
                     />
@@ -52,3 +54,15 @@ export default class Layout extends Component {
         )
     }
 }
+
+Layout.propTypes = {
+    title: PropTypes.string.isRequired
+}
+
+const mapStateToProps = (state, ownProps) => {
+    return {
+        title: state.title || ownProps,
+    }
+}
+
+export default connect(mapStateToProps)(Layout)

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import HttpService from '../common/http.service';
+import { connect } from 'react-redux';
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
     componentWillMount() {
+        this.props.setTitle();
         this.loadData();
     }
     loadData() {
@@ -14,3 +16,14 @@ export default class Dashboard extends Component {
         )
     }
 }
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        setTitle: () => {
+            dispatch({ type: 'SET_TITLE', payload: 'Dashboard' });
+        }
+    }
+}
+
+
+export default connect(null, mapDispatchToProps)(Dashboard)
