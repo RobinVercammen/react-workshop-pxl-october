@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Layout from './common/layout'
+import Layout from './layout'
 
 class App extends Component {
   render() {

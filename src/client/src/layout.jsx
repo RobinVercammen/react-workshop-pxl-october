@@ -7,11 +7,11 @@ import {
     Route,
     Link
 } from 'react-router-dom';
-import Calories from '../calories/calories.page';
-import Dashboard from '../dashboard/dashboard.page';
-import Habits from '../habits/habits.page';
-import Settings from '../settings/settings.page';
-import Weight from '../weight/weight.page';
+import Calories from './calories/calories.page';
+import Dashboard from './dashboard/dashboard.page';
+import Habits from './habits/habits.page';
+import Settings from './settings/settings.page';
+import Weight from './weight/weight.page';
 
 export default class Layout extends Component {
     constructor() {
